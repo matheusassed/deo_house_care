@@ -3,15 +3,6 @@ body header {
   background-size: cover;
   background-position: center;
 }
-body header .top_menu{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #FFF;
-  position: relative;
-  overflow: visible;
-}
 body header .top_menu::before{
   content: "";
   display: block;
@@ -26,31 +17,6 @@ body header .top_menu::before{
 }
 body header .top_menu img{
   z-index: 1;
-}
-body header .menu{
-  z-index: 1;
-}
-body header .menu ul{
-  list-style: none;
-  display: flex;
-}
-body header .menu ul li{
-  margin-left: var(--b5);
-}
-body header .menu ul li a{
-  font-family: var(--primary-font);
-  color: var(--primary-color);
-  font-weight: 600;
-  transition: all ease .3s;
-  cursor: pointer;
-  font-size: 20px;
-}
-body header .menu ul li a.active{
-  color: var(--secondary-color);
-}
-body header .menu ul li a:hover{
-  color: var(--secondary-color);
-  transition: all ease .3s;
 }
 body header nav{
   transform: translateY(132px);
@@ -73,25 +39,134 @@ div.header_body h2{
 }
 
 main{}
-main .intro{}
-main .intro p{}
+main .intro{
+  margin: var(--b5);
+}
+main .intro p{
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-main h4{}
+main h4{
+  margin: 0 var(--b5) var(--b4);
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: 100;
+}
 
-main .lista_servicos{}
-main .lista_servicos .card{}
-main .lista_servicos .card img.card_background{}
-main .lista_servicos .card .overlay{}
-main .lista_servicos .card .card_title{}
-main .lista_servicos .card .card_description{}
-main .lista_servicos .card .btn{}
+main .lista_servicos{
+  margin: 0 var(--b5) var(--b5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .lista_servicos .card{
+  width: 22%;
+  min-width: 260px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: var(--b4);
+  height: 470px;
+  border-radius: var(--b3);
+}
+main .lista_servicos .card img.card_background{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+main .lista_servicos .card .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: var(--secondary-color);
+  opacity: 0.4;
+  transition: all ease .3s;
+}
+main .lista_servicos .card .content{
+  position: absolute;
+  top: 0;
+  padding: 30px 20px 20px;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all ease .5s;
+  transform: translateY(74%);
+}
+main .lista_servicos .card:hover .content{
+  transition: all ease .5s;
+  transform: translateY(0%);
+}
+main .lista_servicos .card .card_title{
+  color: #FFF;
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+main .lista_servicos .card .card_description{
+  color: #FFF;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+main .lista_servicos .card .btn{
+  margin: 40px auto 0;
+}
+main .lista_servicos .card:hover .overlay{
+  transition: all ease .5s;
+  background: var(--primary-color);
+}
 
-main .indicar_servico{}
-main .indicar_servico h4{}
-main .indicar_servico form{}
-main .indicar_servico form .fifty{}
-main .indicar_servico form .full{}
-main .indicar_servico form label{}
-main .indicar_servico form input{}
-main .indicar_servico form textarea{}
-main .indicar_servico form button{}
+main .indicar_servico form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 var(--b5) var(--b5);
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .indicar_servico form input{
+  font-family: var(--primary-font);
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--b4);
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border-radius: var(--b1);
+  border: 1px solid rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+}
+main .indicar_servico form textarea{
+  font-family: var(--primary-font);
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, .3);
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: var(--b1);
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+  resize: none;
+}
+main .indicar_servico form button{
+  border: none;
+  position: absolute;
+  bottom: 0;
+  right: var(--b5);
+}
