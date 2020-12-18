@@ -33,6 +33,43 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* variáveis */
 
 /* menu */
+body header .top_menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+}
+
+body header ul.menu{
+  list-style: none;
+  display: flex;
+  z-index: 1;
+  position: relative;
+}
+body header ul.menu li{
+  margin-left: var(--b5);
+}
+body header ul.menu li a{
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: all ease .3s;
+  cursor: pointer;
+  font-size: 20px;
+}
+body header ul.menu li a.active{
+  color: var(--secondary-color);
+}
+body header ul.menu li a:hover{
+  color: var(--secondary-color);
+  transition: all ease .3s;
+}
+body header nav{
+  transform: translateY(80px);
+}
+
 nav{
   display: flex;
   justify-content: space-between;
