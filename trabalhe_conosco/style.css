@@ -15,7 +15,7 @@ body header .top_menu::before{
   left: 50%;
   transform: translate(-50%, -32px);
 }
-body header .top_menu img{
+body header .top_menu > a{
   z-index: 1;
 }
 body header nav{
