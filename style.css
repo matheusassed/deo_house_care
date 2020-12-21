@@ -34,12 +34,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* menu */
 body header .top_menu{
+  max-width: 1200px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   overflow: visible;
+  margin: 0 auto;
 }
 
 body header ul.menu{
@@ -57,7 +59,7 @@ body header ul.menu li a{
   font-weight: 600;
   transition: all ease .3s;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
 }
 body header ul.menu li a.active{
   color: var(--secondary-color);
@@ -68,6 +70,9 @@ body header ul.menu li a:hover{
 }
 body header nav{
   transform: translateY(80px);
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 nav{
@@ -84,7 +89,7 @@ nav ul{
   height: 40px;
   top: 50%;
   transform: translateY(-50%);
-  right: -380px;
+  right: -1000px;
   transition: all ease .3s;
 }
 nav a{
@@ -116,10 +121,10 @@ nav .sidebarIconToggle {
     height: 100%;
     width: 100%;
     top: 50%;
-    left: 0;
     height: 22px;
     width: 22px;
     transform: translateY(-50%);
+    right: 0;
 }
 nav .sidebarIconToggle:hover div{
   background-color: var(--secondary-color)
@@ -169,8 +174,29 @@ nav input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     transform: rotate(-135deg);
     margin-top: -9px;
 }
+@media screen and (max-width:860px){
+  body header ul.menu li{
+    margin-left: var(--b3);
+  }
+  body header ul.menu li:first-child{
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:730px){
+  body header .top_menu{
+    flex-direction: column;
+  }
+  body header .top_menu img{
+    align-self: flex-start;
+    margin-bottom: 20px;
+  }
+  body header .top_menu .menu{
+    align-self: flex-end;
+  }
+}
 /* menu */
 
+/* header */
 body header {
   background: url("img/header.png") no-repeat;
   background-size: cover;
@@ -188,30 +214,85 @@ h1{
 }
 h2{
   font-size: 72px;
-  max-width: 660px;
+  width: 50%;
   color: var(--secondary-color);
   font-family: var(--primary-font);
   margin-top: var(--b7);
 }
 header img.main_logo{
-  width: 300px;
+  width: 240px;
   height: auto;
   object-fit: contain;
 }
 div.header_body{
-  width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: var(--b6) 0;
+  margin: var(--b6) auto;
+  width: 100%;
 }
 div.header_body .img{
-  width: calc(100% - 660px);
+  width: 40%;
   display: flex;
 }
 div.header_body .img img{
   margin: auto;
 }
+@media screen and (max-width:860px){
+  div.header_body{
+    flex-direction: column;
+  }
+  div.header_body h2{
+    margin: 0 0 50px;
+    width: 100%;
+    text-align: center;
+    font-size: var(--b5);
+    text-align: left;
+  }
+  div.header_body .img{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px){
+  body header{
+    padding: var(--b4) var(--b3);
+  }
+}
+@media screen and (max-width: 488px){
+  div.header_body h2{
+    font-size: var(--b5);
+    text-align: left;
+  }
+}
+@media screen and (max-width: 428px){
+  div.header_body h2{
+    font-size: 48px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 340px){
+  body header ul.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  body header ul.menu li{
+    margin: 0;
+  }
+  div.header_body h2{
+    font-size: var(--b4);
+    text-align: left;
+  }
+}
+@media screen and (max-width: 330px){
+  body header ul.menu{
+    flex-direction: column;
+    text-align: right
+  }
+}
+/* header */
 
 main h3{
   font-family: var(--secondary-font);
@@ -221,7 +302,7 @@ main h3{
 }
 
 /* botões */
-main .btn{
+.btn{
   font-family: var(--primary-font);
   color: #FFF;
   font-size: 18px;
@@ -233,10 +314,10 @@ main .btn{
   transition: all ease .3s;
   cursor: pointer;
 }
-main .btn.verde{
+.btn.verde{
   background: var(--secondary-color-light);
 }
-main .btn.verde:hover{
+.btn.verde:hover{
   background: var(--primary-color-light);
   transition: all ease .3s;
 }
@@ -248,6 +329,9 @@ main .quem_somos{
   padding: var(--b5);
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 main .quem_somos .content{
   width: 49%;
@@ -273,16 +357,56 @@ main .quem_somos .content img{
   width: 380px;
   margin-top: 50px;
 }
+
+@media screen and (max-width:1063px){
+  main .quem_somos .content:last-child{
+    width: 49%;
+  }
+}
+@media screen and (max-width:880px){
+  main .quem_somos{
+    flex-direction: column-reverse;
+    padding: var(--b5) 0;
+  }
+  main .quem_somos .content{
+    width: 100% !important;
+  }
+  main .quem_somos .content:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  main .quem_somos .content h3{
+    text-align: left;
+    margin-right: 20px;
+  }
+  main .quem_somos .content br{
+    display: none;
+  }
+}
+@media screen and (max-width:600px){
+  main .quem_somos .content:last-child{
+    flex-direction: column;
+  }
+}
 /* quem somos */
 
 /* serviços */
-main .servicos{
-  padding: var(--b5) var(--b5) 0;
+main .container_servicos{
+  background: linear-gradient(180deg, rgba(179, 66, 67, 0.06) 0%, rgba(179, 66, 67, 0.2) 51.04%, rgba(179, 66, 67, 0) 100%);
   margin: var(--b5) 0;
+  padding: 0 var(--b5);
+}
+main .servicos{
+  padding: var(--b5) 0 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(180deg, rgba(179, 66, 67, 0.06) 0%, rgba(179, 66, 67, 0.2) 51.04%, rgba(179, 66, 67, 0) 100%);
+  width: 100%;
+  max-width: 1200px;
 }
 main .servicos .content{
   display: flex;
@@ -296,6 +420,14 @@ main .servicos .content p{
   font-weight: 100;
   margin-top: 30px;
 }
+@media screen and (max-width:680px){
+  main .container_servicos{
+    padding: 0;
+  }
+  main .servicos{
+    flex-direction: column-reverse;
+  }
+}
 /* serviços */
 
 /* depoimentos */
@@ -305,17 +437,34 @@ main .depoimentos{
 /* depoimentos */
 
 /* trabalhe conosco */
-main .trabalhe_conosco{
+main .container_trabalhe_conosco{
   background: linear-gradient(180deg, rgba(0, 179, 152, 0.12) 0%, rgba(56, 179, 166, 0) 100%);
-  padding: var(--b5) var(--b5) 0;
   margin: var(--b5) 0;
+  padding: 0 var(--b5);
+}
+main .trabalhe_conosco{
+  padding: var(--b5) 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 main .trabalhe_conosco .content{
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width:680px){
+  main .container_trabalhe_conosco{
+    padding: 0;
+  }
+  main .trabalhe_conosco{
+    flex-direction: column;
+  }
+  main .trabalhe_conosco .btn{
+    margin-bottom: 30px;
+  }
 }
 /* trabalhe conosco */
 
@@ -359,5 +508,22 @@ footer .col li a{
 footer .col li a:hover{
   color: var(--secondary-color-light);
   transition: all ease .3s;
+}
+@media screen and (max-width:800px){
+  footer{
+    flex-wrap: wrap;
+  }
+  footer .col:first-child{
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+@media screen and (max-width:600px){
+  footer {
+    padding: var(--b5) var(--b3);
+  }
 }
 /* footer */
