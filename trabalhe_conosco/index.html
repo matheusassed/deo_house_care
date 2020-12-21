@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/22c2400201.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Deo House Care - Serviços Domésticos Terceirizados</title>
+</head>
+<body>
+
+  <header>
+    <h1>Deo House Care - Serviços Domésticos Terceirizados</h1>
+    <div class="top_menu">
+      <img src="../img/logomarca.png" alt="Logomarca Deo House Care, uma casa com um coração." class="main_logo">
+
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../servicos/index.html">Serviços</a></li>
+        <li><a href="#" class="active">Trabalhe Conosco</a></li>
+      </ul>
+    </div>
+
+    <nav>
+      <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+      </label>
+      <ul class="group_menu">
+        <li><a href="#" target="_blank" class="contact" name="Telefone" title="Telefone"><i class="fas fa-phone-alt"></i></a></li>
+        <li><a href="#" target="_blank" class="contact" name="E-Mail" title="E-Mail"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="#" target="_blank" class="contact" name="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+        <li><a href="#" target="_blank" class="contact" name="Facebook" title="Facebook"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#" target="_blank" class="contact" name="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+
+    <div class="header_body">
+      <h2>
+        Preencha os campos e envie seu currículo
+      </h2>
+    </div>
+  </header>
+
+  <main>
+    <div class="trabalhe_conosco_form">
+      <h4>Preencha com seus dados</h4>
+      <form action="../enviar_candidatura.php" method="post" name="form" class="formphp form">
+        <input type="text" required name="nome" id="nome" placeholder="Nome Completo">
+        <input type="number" required name="rg" id="rg" placeholder="RG (apenas números)">
+        <input type="number" required name="cpf" id="cpf" placeholder="CPF (apenas números)">
+        <input type="number" required name="idade" id="idade" placeholder="Idade">
+        <input type="file" required name="curriculo" id="curriculo" accept=".pdf, .doc, .docx, .odf">
+        <input type="text" required name="servicos" id="servicos" placeholder="Quais serviços você presta? Separe por vírgula">
+
+        <textarea name="descricao" id="descricao" rows="6" placeholder="Uma breve introdução sobre você"></textarea>
+
+        <button class="btn verde" id="send" name="send" type="submit">Enviar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="col">
+      <img src="../img/logomarca.png" alt="Logomarca Deo House Care - Serviços Domésticos Terceirizados" class="logomarca">
+      <div class="location"><span>Niterói - RJ</span></div>
+    </div>
+    <div class="col">
+      <h5>Explore o site</h5>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../servicos/index.html">Serviços</a></li>
+        <li><a href="#">Trabalhe conosco</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h5>Redes Sociais</h5>
+      <ul>
+        <li><a href="#" target="_blank">Instagram</a></li>
+        <li><a href="#" target="_blank">Facebook</a></li>
+        <li><a href="#" target="_blank">WhatsApp</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h5>Legal</h5>
+      <ul>
+        <li><a href="#">Termos</a></li>
+        <li><a href="#">Privacidade</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

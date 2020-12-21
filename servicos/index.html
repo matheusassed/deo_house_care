@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/22c2400201.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="style.css">
   <title>Deo House Care - Serviços Domésticos Terceirizados</title>
@@ -58,7 +60,7 @@
         <div class="content">
           <h3 class="card_title">Elétrica</h3>
           <p class="card_description">Manutenção e instalação elétrica de baixa complexidade.  Manutenção da parte elétrica, instalação de chuveiro, ventiladores.  Reparos elétricos em geral.</p>
-          <a href="#" class="btn verde">Solicitar</a>
+          <a href="#modal-eletrica" class="btn verde" rel="modal:open">Solicitar</a>
         </div>
       </div>
       <div class="card">
@@ -67,7 +69,7 @@
         <div class="content">
           <h3 class="card_title">Hidráulica</h3>
           <p class="card_description">Desentupimento , eliminação de goteiras e vazamentos, limpeza de caixa d´água e reparos em geral.</p>
-          <a href="#" class="btn verde">Solicitar</a>
+          <a href="#modal-hidraulica" class="btn verde" rel="modal:open">Solicitar</a>
         </div>
       </div>
       <div class="card">
@@ -76,7 +78,7 @@
         <div class="content">
           <h3 class="card_title">Pintor e Grafiteiro</h3>
           <p class="card_description">Pintura e grafite de ambientes internos e externos.</p>
-          <a href="#" class="btn verde">Solicitar</a>
+          <a href="#modal-grafitti" class="btn verde" rel="modal:open">Solicitar</a>
         </div>
       </div>
       <div class="card">
@@ -85,7 +87,7 @@
         <div class="content">
           <h3 class="card_title">Jardinagem</h3>
           <p class="card_description">Preparar a terra, podas das plantas e flores e árvores.</p>
-          <a href="#" class="btn verde">Solicitar</a>
+          <a href="#modal-jardinagem" class="btn verde" rel="modal:open">Solicitar</a>
         </div>
       </div>
       <div class="card">
@@ -94,7 +96,7 @@
         <div class="content">
           <h3 class="card_title">Piscineiro</h3>
           <p class="card_description">Manutenção, tratamento e prevenção de piscinas.</p>
-          <a href="#" class="btn verde">Solicitar</a>
+          <a href="#modal-piscina" class="btn verde" rel="modal:open">Solicitar</a>
         </div>
       </div>
       <div class="card">
@@ -103,7 +105,7 @@
         <div class="content">
           <h3 class="card_title">Chef de Cozinha</h3>
           <p class="card_description">Preparo de alimentação congelada, trivial simples, e preparo jantar e almoço para pequenos grupos em residências e festas.</p>
-          <a href="#" class="btn verde">Solicitar</a>
+          <a href="#modal-cozinha" class="btn verde" rel="modal:open">Solicitar</a>
         </div>
       </div>
       <div class="card">
@@ -112,16 +114,16 @@
         <div class="content">
           <h3 class="card_title">Personal Organizer</h3>
           <p class="card_description">Organizar armários, cozinhas, home-offices até a residência toda, mudanças, documentos, fotos, escritórios, atividades domésticas e agendas particulares.</p>
-          <a href="#" class="btn verde">Solicitar</a>
+          <a href="#modal-organizer" class="btn verde" rel="modal:open">Solicitar</a>
         </div>
       </div>
       <div class="card">
         <img src="../img/servicos/pet_care.jpg" alt="Foto de uma pessoa caminhando com um cachorro." class="card_background">
         <div class="overlay"></div>
         <div class="content">
-          <h3 class="card_title">Pets Care</h3>
+          <h3 class="card_title">Pet Care</h3>
           <p class="card_description">Sem tempo para cuidar dos seus pets?  Passeamos com seus aminais, levamos eles ao veterinário, parquinhos e etc.</p>
-          <a href="#" class="btn verde">Solicitar</a>
+          <a href="#modal-pet_care" class="btn verde" rel="modal:open">Solicitar</a>
         </div>
       </div>
       <div class="card">
@@ -130,7 +132,7 @@
         <div class="content">
           <h3 class="card_title">Passadeira</h3>
           <p class="card_description">Passar roupas do dia a dia.</p>
-          <a href="#" class="btn verde">Solicitar</a>
+          <a href="#modal-passadeira" class="btn verde" rel="modal:open">Solicitar</a>
         </div>
       </div>
       <div class="card">
@@ -139,7 +141,7 @@
         <div class="content">
           <h3 class="card_title">Faxina</h3>
           <p class="card_description">Limpeza comum e limpeza pesada.</p>
-          <a href="#" class="btn verde">Solicitar</a>
+          <a href="#modal-faxina" class="btn verde" rel="modal:open">Solicitar</a>
         </div>
       </div>
       <div class="card">
@@ -148,7 +150,7 @@
         <div class="content">
           <h3 class="card_title">Emfermagem</h3>
           <p class="card_description">serviços de enfermagem, homecare e administração de medicamentos para gestantes, pós operatórios e acidentados.</p>
-          <a href="#" class="btn verde">Solicitar</a>
+          <a href="#modal-enfermagem" class="btn verde" rel="modal:open">Solicitar</a>
         </div>
       </div>
       <div class="card">
@@ -157,7 +159,7 @@
         <div class="content">
           <h3 class="card_title">Cuidador</h3>
           <p class="card_description">Cuidador de pessoas: Idosos, crianças, gestantes e pós operatório.</p>
-          <a href="#" class="btn verde">Solicitar</a>
+          <a href="#modal-cuidado_idosos" class="btn verde" rel="modal:open">Solicitar</a>
         </div>
       </div>
       <div class="card">
@@ -166,7 +168,7 @@
         <div class="content">
           <h3 class="card_title">Massoterapeuta</h3>
           <p class="card_description">São técnicas de massagem para alivío do estresse, modeladora, pós operatório e relaxamento.</p>
-          <a href="#" class="btn verde">Solicitar</a>
+          <a href="#modal-massoterapia" class="btn verde" rel="modal:open">Solicitar</a>
         </div>
       </div>
     </div>
@@ -194,9 +196,9 @@
     <div class="col">
       <h5>Explore o site</h5>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="#">Serviços</a></li>
-        <li><a href="#">Trabalhe conosco</a></li>
+        <li><a href="../trabalhe_conosco/index.html">Trabalhe conosco</a></li>
       </ul>
     </div>
     <div class="col">
@@ -216,5 +218,442 @@
     </div>
   </footer>
 
+
+  <!-- MODAIS -->
+  <div class="modais">
+    <div class="modal" id="modal-eletrica">
+      <div class="inner_modal">
+        
+        <div class="logo"><img src="../img/logomarca.png" alt="Logomarca Deo House Care, uma casa com um coração." class="main_logo"></div>
+        
+        <h2>Deseja solicitar o serviço de elétrica?</h2>
+        <div class="container_content">
+          <div class="content">
+            <h4>Deixe seus dados para entrarmos em contato com você.</h4>
+            <form action="../solicitar_servico.php" method="post" name="form" class="formphp form">
+              <input type="text" required placeholder="Nome" id="nome" name="nome">
+              <input type="text" required placeholder="E-mail" id="email" name="email">
+              <input type="text" required placeholder="Telefone" id="telefone" name="telefone">
+              <input type="text" class="hidden" name="hidden" id="hidden" value="Elétrica">
+              <button class="btn verde" id="solicitar" name="solicitar" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="content">
+            <h4>Ou se preferir, entre em contato conosco.</h4>
+            <a href="mailto:contato@deohousecare.com.br" class="contato">
+              <i class="fas fa-at"></i> contato@deohousecare.com.br
+            </a>
+            <a href="tel:+5521976484242" class="contato"><i class="fas fa-phone-alt"></i> 21 97648-4242</a>
+            <div class="sociais">
+              <a href="#"><img src="../img/servicos/facebook.png" alt="Logotipo do Facebook"></a>
+              <a href="#"><img src="../img/servicos/instagram.png" alt="Logotipo do Instagram"></a>
+              <a href="#"><img src="../img/servicos/whatsapp.png" alt="Logotipo do WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-hidraulica">
+      <div class="inner_modal">
+        
+        <div class="logo"><img src="../img/logomarca.png" alt="Logomarca Deo House Care, uma casa com um coração." class="main_logo"></div>
+        
+        <h2>Deseja solicitar o serviço de hidráulica?</h2>
+        <div class="container_content">
+          <div class="content">
+            <h4>Deixe seus dados para entrarmos em contato com você.</h4>
+            <form action="../solicitar_servico.php" method="post" name="form" class="formphp form">
+              <input type="text" required placeholder="Nome" id="nome" name="nome">
+              <input type="text" required placeholder="E-mail" id="email" name="email">
+              <input type="text" required placeholder="Telefone" id="telefone" name="telefone">
+              <input type="text" class="hidden" name="hidden" id="hidden" value="Hidráulica">
+              <button class="btn verde" id="solicitar" name="solicitar" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="content">
+            <h4>Ou se preferir, entre em contato conosco.</h4>
+            <a href="mailto:contato@deohousecare.com.br" class="contato">
+              <i class="fas fa-at"></i> contato@deohousecare.com.br
+            </a>
+            <a href="tel:+5521976484242" class="contato"><i class="fas fa-phone-alt"></i> 21 97648-4242</a>
+            <div class="sociais">
+              <a href="#"><img src="../img/servicos/facebook.png" alt="Logotipo do Facebook"></a>
+              <a href="#"><img src="../img/servicos/instagram.png" alt="Logotipo do Instagram"></a>
+              <a href="#"><img src="../img/servicos/whatsapp.png" alt="Logotipo do WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-grafitti">
+      <div class="inner_modal">
+        
+        <div class="logo"><img src="../img/logomarca.png" alt="Logomarca Deo House Care, uma casa com um coração." class="main_logo"></div>
+        
+        <h2>Deseja solicitar o serviço de pintor e grafiteiro?</h2>
+        <div class="container_content">
+          <div class="content">
+            <h4>Deixe seus dados para entrarmos em contato com você.</h4>
+            <form action="../solicitar_servico.php" method="post" name="form" class="formphp form">
+              <input type="text" required placeholder="Nome" id="nome" name="nome">
+              <input type="text" required placeholder="E-mail" id="email" name="email">
+              <input type="text" required placeholder="Telefone" id="telefone" name="telefone">
+              <input type="text" class="hidden" name="hidden" id="hidden" value="Pintor e Grafiteiro">
+              <button class="btn verde" id="solicitar" name="solicitar" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="content">
+            <h4>Ou se preferir, entre em contato conosco.</h4>
+            <a href="mailto:contato@deohousecare.com.br" class="contato">
+              <i class="fas fa-at"></i> contato@deohousecare.com.br
+            </a>
+            <a href="tel:+5521976484242" class="contato"><i class="fas fa-phone-alt"></i> 21 97648-4242</a>
+            <div class="sociais">
+              <a href="#"><img src="../img/servicos/facebook.png" alt="Logotipo do Facebook"></a>
+              <a href="#"><img src="../img/servicos/instagram.png" alt="Logotipo do Instagram"></a>
+              <a href="#"><img src="../img/servicos/whatsapp.png" alt="Logotipo do WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-jardinagem">
+      <div class="inner_modal">
+        
+        <div class="logo"><img src="../img/logomarca.png" alt="Logomarca Deo House Care, uma casa com um coração." class="main_logo"></div>
+        
+        <h2>Deseja solicitar o serviço de jardinagem?</h2>
+        <div class="container_content">
+          <div class="content">
+            <h4>Deixe seus dados para entrarmos em contato com você.</h4>
+            <form action="../solicitar_servico.php" method="post" name="form" class="formphp form">
+              <input type="text" required placeholder="Nome" id="nome" name="nome">
+              <input type="text" required placeholder="E-mail" id="email" name="email">
+              <input type="text" required placeholder="Telefone" id="telefone" name="telefone">
+              <input type="text" class="hidden" name="hidden" id="hidden" value="Jardinagem">
+              <button class="btn verde" id="solicitar" name="solicitar" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="content">
+            <h4>Ou se preferir, entre em contato conosco.</h4>
+            <a href="mailto:contato@deohousecare.com.br" class="contato">
+              <i class="fas fa-at"></i> contato@deohousecare.com.br
+            </a>
+            <a href="tel:+5521976484242" class="contato"><i class="fas fa-phone-alt"></i> 21 97648-4242</a>
+            <div class="sociais">
+              <a href="#"><img src="../img/servicos/facebook.png" alt="Logotipo do Facebook"></a>
+              <a href="#"><img src="../img/servicos/instagram.png" alt="Logotipo do Instagram"></a>
+              <a href="#"><img src="../img/servicos/whatsapp.png" alt="Logotipo do WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-piscina">
+      <div class="inner_modal">
+        
+        <div class="logo"><img src="../img/logomarca.png" alt="Logomarca Deo House Care, uma casa com um coração." class="main_logo"></div>
+        
+        <h2>Deseja solicitar o serviço de piscineiro?</h2>
+        <div class="container_content">
+          <div class="content">
+            <h4>Deixe seus dados para entrarmos em contato com você.</h4>
+            <form action="../solicitar_servico.php" method="post" name="form" class="formphp form">
+              <input type="text" required placeholder="Nome" id="nome" name="nome">
+              <input type="text" required placeholder="E-mail" id="email" name="email">
+              <input type="text" required placeholder="Telefone" id="telefone" name="telefone">
+              <input type="text" class="hidden" name="hidden" id="hidden" value="Piscineiro">
+              <button class="btn verde" id="solicitar" name="solicitar" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="content">
+            <h4>Ou se preferir, entre em contato conosco.</h4>
+            <a href="mailto:contato@deohousecare.com.br" class="contato">
+              <i class="fas fa-at"></i> contato@deohousecare.com.br
+            </a>
+            <a href="tel:+5521976484242" class="contato"><i class="fas fa-phone-alt"></i> 21 97648-4242</a>
+            <div class="sociais">
+              <a href="#"><img src="../img/servicos/facebook.png" alt="Logotipo do Facebook"></a>
+              <a href="#"><img src="../img/servicos/instagram.png" alt="Logotipo do Instagram"></a>
+              <a href="#"><img src="../img/servicos/whatsapp.png" alt="Logotipo do WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-cozinha">
+      <div class="inner_modal">
+        
+        <div class="logo"><img src="../img/logomarca.png" alt="Logomarca Deo House Care, uma casa com um coração." class="main_logo"></div>
+        
+        <h2>Deseja solicitar o serviço de chef de cozinha?</h2>
+        <div class="container_content">
+          <div class="content">
+            <h4>Deixe seus dados para entrarmos em contato com você.</h4>
+            <form action="../solicitar_servico.php" method="post" name="form" class="formphp form">
+              <input type="text" required placeholder="Nome" id="nome" name="nome">
+              <input type="text" required placeholder="E-mail" id="email" name="email">
+              <input type="text" required placeholder="Telefone" id="telefone" name="telefone">
+              <input type="text" class="hidden" name="hidden" id="hidden" value="Chef de Cozinha">
+              <button class="btn verde" id="solicitar" name="solicitar" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="content">
+            <h4>Ou se preferir, entre em contato conosco.</h4>
+            <a href="mailto:contato@deohousecare.com.br" class="contato">
+              <i class="fas fa-at"></i> contato@deohousecare.com.br
+            </a>
+            <a href="tel:+5521976484242" class="contato"><i class="fas fa-phone-alt"></i> 21 97648-4242</a>
+            <div class="sociais">
+              <a href="#"><img src="../img/servicos/facebook.png" alt="Logotipo do Facebook"></a>
+              <a href="#"><img src="../img/servicos/instagram.png" alt="Logotipo do Instagram"></a>
+              <a href="#"><img src="../img/servicos/whatsapp.png" alt="Logotipo do WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-organizer">
+      <div class="inner_modal">
+        
+        <div class="logo"><img src="../img/logomarca.png" alt="Logomarca Deo House Care, uma casa com um coração." class="main_logo"></div>
+        
+        <h2>Deseja solicitar o serviço de personal organizer?</h2>
+        <div class="container_content">
+          <div class="content">
+            <h4>Deixe seus dados para entrarmos em contato com você.</h4>
+            <form action="../solicitar_servico.php" method="post" name="form" class="formphp form">
+              <input type="text" required placeholder="Nome" id="nome" name="nome">
+              <input type="text" required placeholder="E-mail" id="email" name="email">
+              <input type="text" required placeholder="Telefone" id="telefone" name="telefone">
+              <input type="text" class="hidden" name="hidden" id="hidden" value="Personal Organizer">
+              <button class="btn verde" id="solicitar" name="solicitar" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="content">
+            <h4>Ou se preferir, entre em contato conosco.</h4>
+            <a href="mailto:contato@deohousecare.com.br" class="contato">
+              <i class="fas fa-at"></i> contato@deohousecare.com.br
+            </a>
+            <a href="tel:+5521976484242" class="contato"><i class="fas fa-phone-alt"></i> 21 97648-4242</a>
+            <div class="sociais">
+              <a href="#"><img src="../img/servicos/facebook.png" alt="Logotipo do Facebook"></a>
+              <a href="#"><img src="../img/servicos/instagram.png" alt="Logotipo do Instagram"></a>
+              <a href="#"><img src="../img/servicos/whatsapp.png" alt="Logotipo do WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-pet_care">
+      <div class="inner_modal">
+        
+        <div class="logo"><img src="../img/logomarca.png" alt="Logomarca Deo House Care, uma casa com um coração." class="main_logo"></div>
+        
+        <h2>Deseja solicitar o serviço de pet care?</h2>
+        <div class="container_content">
+          <div class="content">
+            <h4>Deixe seus dados para entrarmos em contato com você.</h4>
+            <form action="../solicitar_servico.php" method="post" name="form" class="formphp form">
+              <input type="text" required placeholder="Nome" id="nome" name="nome">
+              <input type="text" required placeholder="E-mail" id="email" name="email">
+              <input type="text" required placeholder="Telefone" id="telefone" name="telefone">
+              <input type="text" class="hidden" name="hidden" id="hidden" value="Pet Care">
+              <button class="btn verde" id="solicitar" name="solicitar" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="content">
+            <h4>Ou se preferir, entre em contato conosco.</h4>
+            <a href="mailto:contato@deohousecare.com.br" class="contato">
+              <i class="fas fa-at"></i> contato@deohousecare.com.br
+            </a>
+            <a href="tel:+5521976484242" class="contato"><i class="fas fa-phone-alt"></i> 21 97648-4242</a>
+            <div class="sociais">
+              <a href="#"><img src="../img/servicos/facebook.png" alt="Logotipo do Facebook"></a>
+              <a href="#"><img src="../img/servicos/instagram.png" alt="Logotipo do Instagram"></a>
+              <a href="#"><img src="../img/servicos/whatsapp.png" alt="Logotipo do WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-passadeira">
+      <div class="inner_modal">
+        
+        <div class="logo"><img src="../img/logomarca.png" alt="Logomarca Deo House Care, uma casa com um coração." class="main_logo"></div>
+        
+        <h2>Deseja solicitar o serviço de passadeira?</h2>
+        <div class="container_content">
+          <div class="content">
+            <h4>Deixe seus dados para entrarmos em contato com você.</h4>
+            <form action="../solicitar_servico.php" method="post" name="form" class="formphp form">
+              <input type="text" required placeholder="Nome" id="nome" name="nome">
+              <input type="text" required placeholder="E-mail" id="email" name="email">
+              <input type="text" required placeholder="Telefone" id="telefone" name="telefone">
+              <input type="text" class="hidden" name="hidden" id="hidden" value="Passadeira">
+              <button class="btn verde" id="solicitar" name="solicitar" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="content">
+            <h4>Ou se preferir, entre em contato conosco.</h4>
+            <a href="mailto:contato@deohousecare.com.br" class="contato">
+              <i class="fas fa-at"></i> contato@deohousecare.com.br
+            </a>
+            <a href="tel:+5521976484242" class="contato"><i class="fas fa-phone-alt"></i> 21 97648-4242</a>
+            <div class="sociais">
+              <a href="#"><img src="../img/servicos/facebook.png" alt="Logotipo do Facebook"></a>
+              <a href="#"><img src="../img/servicos/instagram.png" alt="Logotipo do Instagram"></a>
+              <a href="#"><img src="../img/servicos/whatsapp.png" alt="Logotipo do WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-faxina">
+      <div class="inner_modal">
+        
+        <div class="logo"><img src="../img/logomarca.png" alt="Logomarca Deo House Care, uma casa com um coração." class="main_logo"></div>
+        
+        <h2>Deseja solicitar o serviço de faxina?</h2>
+        <div class="container_content">
+          <div class="content">
+            <h4>Deixe seus dados para entrarmos em contato com você.</h4>
+            <form action="../solicitar_servico.php" method="post" name="form" class="formphp form">
+              <input type="text" required placeholder="Nome" id="nome" name="nome">
+              <input type="text" required placeholder="E-mail" id="email" name="email">
+              <input type="text" required placeholder="Telefone" id="telefone" name="telefone">
+              <input type="text" class="hidden" name="hidden" id="hidden" value="Faxina">
+              <button class="btn verde" id="solicitar" name="solicitar" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="content">
+            <h4>Ou se preferir, entre em contato conosco.</h4>
+            <a href="mailto:contato@deohousecare.com.br" class="contato">
+              <i class="fas fa-at"></i> contato@deohousecare.com.br
+            </a>
+            <a href="tel:+5521976484242" class="contato"><i class="fas fa-phone-alt"></i> 21 97648-4242</a>
+            <div class="sociais">
+              <a href="#"><img src="../img/servicos/facebook.png" alt="Logotipo do Facebook"></a>
+              <a href="#"><img src="../img/servicos/instagram.png" alt="Logotipo do Instagram"></a>
+              <a href="#"><img src="../img/servicos/whatsapp.png" alt="Logotipo do WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-enfermagem">
+      <div class="inner_modal">
+        
+        <div class="logo"><img src="../img/logomarca.png" alt="Logomarca Deo House Care, uma casa com um coração." class="main_logo"></div>
+        
+        <h2>Deseja solicitar o serviço de enfermagem?</h2>
+        <div class="container_content">
+          <div class="content">
+            <h4>Deixe seus dados para entrarmos em contato com você.</h4>
+            <form action="../solicitar_servico.php" method="post" name="form" class="formphp form">
+              <input type="text" required placeholder="Nome" id="nome" name="nome">
+              <input type="text" required placeholder="E-mail" id="email" name="email">
+              <input type="text" required placeholder="Telefone" id="telefone" name="telefone">
+              <input type="text" class="hidden" name="hidden" id="hidden" value="Enfermagem">
+              <button class="btn verde" id="solicitar" name="solicitar" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="content">
+            <h4>Ou se preferir, entre em contato conosco.</h4>
+            <a href="mailto:contato@deohousecare.com.br" class="contato">
+              <i class="fas fa-at"></i> contato@deohousecare.com.br
+            </a>
+            <a href="tel:+5521976484242" class="contato"><i class="fas fa-phone-alt"></i> 21 97648-4242</a>
+            <div class="sociais">
+              <a href="#"><img src="../img/servicos/facebook.png" alt="Logotipo do Facebook"></a>
+              <a href="#"><img src="../img/servicos/instagram.png" alt="Logotipo do Instagram"></a>
+              <a href="#"><img src="../img/servicos/whatsapp.png" alt="Logotipo do WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-cuidado_idosos">
+      <div class="inner_modal">
+        
+        <div class="logo"><img src="../img/logomarca.png" alt="Logomarca Deo House Care, uma casa com um coração." class="main_logo"></div>
+        
+        <h2>Deseja solicitar o serviço de cuidador?</h2>
+        <div class="container_content">
+          <div class="content">
+            <h4>Deixe seus dados para entrarmos em contato com você.</h4>
+            <form action="../solicitar_servico.php" method="post" name="form" class="formphp form">
+              <input type="text" required placeholder="Nome" id="nome" name="nome">
+              <input type="text" required placeholder="E-mail" id="email" name="email">
+              <input type="text" required placeholder="Telefone" id="telefone" name="telefone">
+              <input type="text" class="hidden" name="hidden" id="hidden" value="Cuidador">
+              <button class="btn verde" id="solicitar" name="solicitar" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="content">
+            <h4>Ou se preferir, entre em contato conosco.</h4>
+            <a href="mailto:contato@deohousecare.com.br" class="contato">
+              <i class="fas fa-at"></i> contato@deohousecare.com.br
+            </a>
+            <a href="tel:+5521976484242" class="contato"><i class="fas fa-phone-alt"></i> 21 97648-4242</a>
+            <div class="sociais">
+              <a href="#"><img src="../img/servicos/facebook.png" alt="Logotipo do Facebook"></a>
+              <a href="#"><img src="../img/servicos/instagram.png" alt="Logotipo do Instagram"></a>
+              <a href="#"><img src="../img/servicos/whatsapp.png" alt="Logotipo do WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-massoterapia">
+      <div class="inner_modal">
+        
+        <div class="logo"><img src="../img/logomarca.png" alt="Logomarca Deo House Care, uma casa com um coração." class="main_logo"></div>
+        
+        <h2>Deseja solicitar o serviço de massoterapeuta?</h2>
+        <div class="container_content">
+          <div class="content">
+            <h4>Deixe seus dados para entrarmos em contato com você.</h4>
+            <form action="../solicitar_servico.php" method="post" name="form" class="formphp form">
+              <input type="text" required placeholder="Nome" id="nome" name="nome">
+              <input type="text" required placeholder="E-mail" id="email" name="email">
+              <input type="text" required placeholder="Telefone" id="telefone" name="telefone">
+              <input type="text" class="hidden" name="hidden" id="hidden" value="Massoterapeuta">
+              <button class="btn verde" id="solicitar" name="solicitar" type="submit">Enviar</button>
+            </form>
+          </div>
+          <div class="content">
+            <h4>Ou se preferir, entre em contato conosco.</h4>
+            <a href="mailto:contato@deohousecare.com.br" class="contato">
+              <i class="fas fa-at"></i> contato@deohousecare.com.br
+            </a>
+            <a href="tel:+5521976484242" class="contato"><i class="fas fa-phone-alt"></i> 21 97648-4242</a>
+            <div class="sociais">
+              <a href="#"><img src="../img/servicos/facebook.png" alt="Logotipo do Facebook"></a>
+              <a href="#"><img src="../img/servicos/instagram.png" alt="Logotipo do Instagram"></a>
+              <a href="#"><img src="../img/servicos/whatsapp.png" alt="Logotipo do WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAIS -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>

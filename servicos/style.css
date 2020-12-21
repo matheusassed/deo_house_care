@@ -8,8 +8,8 @@ body header .top_menu::before{
   display: block;
   position: absolute;
   background: #FFF;
-  width: calc(100% + 128px);
-  height: calc(100% + 42px);
+  width: 100vw;
+  height: calc(100% + 50px);
   z-index: 0;
   top: 0;
   left: 50%;
@@ -20,25 +20,26 @@ body header .top_menu img{
 }
 body header nav{
   transform: translateY(132px);
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 div.header_body{
   width: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  margin: var(--b6) 0;
 }
 div.header_body h2{
-  font-size: 64px;
+  font-size: 48px;
   color: #FFF;
   font-family: var(--primary-font);
   margin: var(--b6) 0;
   font-weight: 100;
   max-width: none;
+  width: 100%;
+  text-align: center;
 }
 
-main{}
 main .intro{
   margin: var(--b5);
 }
@@ -48,20 +49,25 @@ main .intro p{
   font-size: 16px;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 main h4{
-  margin: 0 var(--b5) var(--b4);
+  margin: 0 auto var(--b4);
   font-family: var(--primary-font);
   font-size: 24px;
   font-weight: 100;
+  max-width: 1200px;
+  width: 100%;
 }
 
 main .lista_servicos{
-  margin: 0 var(--b5) var(--b5);
+  margin: 0 auto var(--b5);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
 }
 main .lista_servicos .card{
   width: 22%;
@@ -94,7 +100,7 @@ main .lista_servicos .card .content{
   position: absolute;
   top: 0;
   padding: 30px 20px 20px;
-  z-index: 2;
+  z-index: 1;
   height: 100%;
   width: 100%;
   display: flex;
@@ -135,10 +141,11 @@ main .indicar_servico form{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 var(--b5) var(--b5);
+  padding: 0 0 var(--b5);
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 main .indicar_servico form input{
   font-family: var(--primary-font);
@@ -168,5 +175,122 @@ main .indicar_servico form button{
   border: none;
   position: absolute;
   bottom: 0;
-  right: var(--b5);
+  right: 0;
 }
+
+
+/* MODAIS */
+.modal{
+  z-index: 9;
+  max-width: initial;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: 0;
+  padding: var(--b4);
+}
+
+.inner_modal{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.modal .logo{
+  width: 90%;
+}
+.modal .logo img{
+  width: 300px;
+}
+
+.modal a.close-modal{
+  top: 32px;
+  right: 32px;
+}
+
+.modal h2{
+  font-family: var(--secondary-font);
+  font-weight: 100;
+  font-size: var(--b5);
+  max-width: 1200px;
+  width: 100%;
+  margin: var(--b4) auto;
+  color: #000;
+}
+
+.modal .container_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.modal .content{
+  width: 48%;
+}
+.modal .content h4{
+  font-family: var(--primary-font);
+  font-weight: 600;
+  margin-bottom: var(--b4);
+}
+.modal .content form{
+  display: flex;
+  flex-direction: column;
+}
+.modal .content form input{
+  font-family: var(--primary-font);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--b4);
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border-radius: var(--b1);
+  border: 1px solid rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+}
+.modal .content form input.hidden{
+  display: none;
+}
+.modal .content form button{
+  border: none;
+  align-self: flex-end;
+}
+
+.modal .content .contato{
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 18px;
+  transition: all ease .3s;
+}
+.modal .content .contato:hover{
+  color: var(--secondary-color);
+  transition: all ease .3s;
+}
+.modal .content .contato i{
+  margin-right: 10px;
+  font-size: 20px
+}
+.modal .content .sociais{
+  margin-top: var(--b5);
+  display: flex;
+  justify-content: space-evenly;
+  overflow: visible;
+}
+.modal .content .sociais a{
+  transition: all ease .3s;
+}
+.modal .content .sociais a:hover{
+  transform: scale(1.2);
+  transition: all ease .3s;
+}
+/* MODAIS */
