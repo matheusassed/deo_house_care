@@ -35,7 +35,7 @@
     //Server settings
     //$mail->SMTPDebug  = SMTP::DEBUG_SERVER;                   // Enable verbose debug output
     $mail->isSMTP();                                            // Send using SMTP
-    $mail->Host       = 'smtp.hostgator.com.br';                      // Set the SMTP server to send through
+    $mail->Host       = 'mail.deohousecare.com.br';                      // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->CharSet    = 'utf-8';
     $mail->Username   = 'site@deohousecare.com.br';           // SMTP username
