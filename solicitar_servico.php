@@ -27,7 +27,6 @@
       <p><b>E-mail:</b> $email</p>
       <p><b>Telefone:</b> $telefone</p><br>
       <p><b>Serviço:</b> <br>$hidden</p>
-      <p><b>Descrição:</b> <br>$mensagem</p>
     </body>
   ";
 
