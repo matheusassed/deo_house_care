@@ -16,7 +16,7 @@
   $rg = $_POST['rg'];
   $cpf = $_POST['cpf'];
   $idade = $_POST['idade'];
-  $curriculo = $_FILES['curriculo'];
+  $curriculo = $_FILES['curriculo']['tmp_name'];
   $servicos = $_POST['servicos'];
 
   $fullMail = "
@@ -24,7 +24,7 @@
       <meta charset='UTF-8'>
     </head>
     <body>
-      <p><b>Nome:</b> $name</p>
+      <p><b>Nome:</b> $name</p> 
       <p><b>RG:</b> $rg</p>
       <p><b>CPF:</b> $cpf</p>
       <p><b>Idade:</b> $idade</p><br>
@@ -51,9 +51,9 @@
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->AddAttachment = $curriculo;
     $mail->Subject = "Trabalhe Conosco Formulário";
     $mail->Body    = $fullMail;
-    $mail->AddAttachment($curriculo['tmp_name'], $curriculo['name']  );
 
     $enviado = $mail->Send();
 
